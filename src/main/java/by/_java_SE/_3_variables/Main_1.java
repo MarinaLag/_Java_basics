@@ -85,6 +85,16 @@ public class Main_1 {
         SIZE = 5;
         final int size = 5;
 
+        double h = 20.5;
+    int khgn = (int) 20.5 +5;
+
+        System.out.println(khgn);
+
+        String j = null;
+      //  String k = 0; ошибка
+
+        System.out.println(Long.MAX_VALUE);
+
 
     }
 }
