@@ -86,14 +86,51 @@ public class Main_1 {
         final int size = 5;
 
         double h = 20.5;
-    int khgn = (int) 20.5 +5;
+        int khgn = (int) 20.5 + 5;
 
         System.out.println(khgn);
 
         String j = null;
-      //  String k = 0; ошибка
+        //  String k = 0; ошибка
 
         System.out.println(Long.MAX_VALUE);
+
+        double f = 10 / 3.0;
+        System.out.println("f = " + f);
+
+        int a22 = 3;
+        int b22 = 7;
+        System.out.println(a22 & b22);
+
+        int number = 4;
+        int key = 7;
+        int encrypt = number ^ key;
+        System.out.println(encrypt);
+
+        int d = 2;
+        System.out.println(~d);
+
+        int g = 2;
+        int p = 3;
+        System.out.println(g << p);
+
+        System.out.println(16 >> 1);
+        System.out.println(5 >> 2);
+
+        System.out.println(-8 >>> 2);
+        System.out.println(16 >>> 2);
+
+        //  System.out.println(-16<<<2);
+
+        boolean vv = (5 > 6) | (2 > 0);
+        System.out.println(vv);
+
+        boolean nn = !(5==3);
+        System.out.println(nn);
+
+
+        boolean ff = (5<2) ^(5>3);
+        System.out.println(ff);
 
 
     }
