@@ -28,5 +28,24 @@ public class Main_1 {
         System.out.println(Arrays.toString(arrAdd));
 
 
+        String [] arr1 = new String[4];
+        Double[] arr2 = new Double[4];
+        double[] arr3 = new double[4];
+        arr3[0] = 25.0;
+
+
+       // String[] seasons  = {"Winter", "Spring", "Summer", "Autumn"};
+
+        String[] seasons  = new String[] {"Winter", "Spring", "Summer", "Autumn"};
+        for (int i = 0; i < 4; i++) {
+            System.out.println(seasons[i]);
+        }
+
+
+
+
+        int[][] myTwoDimentionalArray = new int [8][8];
+
+
     }
 }
