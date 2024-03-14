@@ -44,6 +44,9 @@ public class Main {
         System.out.println(st3.equals(st4));  // true - только если переопределить метод!!!!
 
 
+        student1.hhhh();
+        Student.hhhh(5);
+
 
     }
 }

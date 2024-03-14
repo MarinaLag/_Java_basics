@@ -51,4 +51,10 @@ public class Student {
                 .add("age=" + age)
                 .toString();
     }
+
+     void hhhh(){
+    }
+    static void hhhh(int c){
+    }
+
 }
