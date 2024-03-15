@@ -23,6 +23,10 @@ public class Test_2 {
         System.out.println(b0+ " " + b1 + " " + b2 + " " + b3); //64 1 126 -127
 
 
+       int [][] arr= {{1,2,3,4},{1,2,3,5}};
+        System.out.println(arr[1].length);
+
+
 
 
     }
