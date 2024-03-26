@@ -2,6 +2,8 @@ package by._java_EE._5_lambda;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.function.Predicate;
+import java.util.stream.Collector;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,16 +22,30 @@ public class Main {
         int result = operationable.calculate(5, 10);
         System.out.println(result);
 
-        Operationable operationable1 = (x,y) ->x-y;
-        System.out.println(operationable1.calculate(20,10));
-        Operationable operationable2 = (x,y) -> x*y;
-        System.out.println(operationable2.calculate(30,2));
-        Operationable operationable3 = (x,y) -> x/y;
-        System.out.println(operationable3.calculate(30,2));
+        Operationable operationable1 = (x, y) -> x - y;
+        System.out.println(operationable1.calculate(20, 10));
+        Operationable operationable2 = (x, y) -> x * y;
+        System.out.println(operationable2.calculate(30, 2));
+        Operationable operationable3 = (x, y) -> x / y;
+        System.out.println(operationable3.calculate(30, 2));
 
         System.out.println("-------------------------");
         Printable printable = s -> System.out.println(s);
         printable.print("Hello");
+
+        System.out.println("---------------------------");
+        Operationable operationable4 = (x, y) -> {
+            if (y == 0) {
+                return 0;
+            } else {
+                return x / y;
+            }
+        };
+        System.out.println(operationable4.calculate(20, 10));  //2
+        System.out.println(operationable4.calculate(20, 0));  //0
+
+        Predicate<Integer> pr = x -> x > 0;
+        System.out.println(pr.test(5));
 
 
     }
