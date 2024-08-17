@@ -20,6 +20,9 @@ public class Main {
             System.out.println(elem);  // выведет все элементы
         }
 
+        System.out.println("++++++++++++++++");
+        System.out.println(Season1.values()[0]);
+        System.out.println(Season1.values().length);
 
     }
 

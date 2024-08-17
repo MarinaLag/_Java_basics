@@ -20,4 +20,5 @@ public enum DayOfWeek {
         return new StringJoiner(", ", DayOfWeek.class.getSimpleName() + "[", "]")
                 .toString();
     }
+
 }
