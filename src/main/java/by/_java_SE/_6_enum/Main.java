@@ -7,7 +7,7 @@ public class Main {
         DayOfWeek myDay = DayOfWeek.THURSDAY;
         System.out.println(myDay);
 
-        System.out.println(Colors.RED);
+        System.out.println(Colors.КРАСНЫЙ);
 
     //    DayOfWeek dayOfWeek = new DayOfWeek(); ошибка создавать объект нельзя
         DayOfWeek dayOfWeek = DayOfWeek.MONDAY;
@@ -28,7 +28,7 @@ public class Main {
 
 }
 enum Colors{
-    RED,
-    WRIGHT,
+    КРАСНЫЙ,
+    БЕЛЫЙ,
     ROSE
 }
