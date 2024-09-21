@@ -1,4 +1,4 @@
-package by.tasks.streams;
+package by.tasksLaba.stream;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,6 +21,8 @@ public class Stream_1 {
         //collect - преобразования элементов потока в другую коллекцию,
         // Это терминальная операция
         // нужно создать список и добавить в него элементы.
+        // возращает список
+
     }
 
 }

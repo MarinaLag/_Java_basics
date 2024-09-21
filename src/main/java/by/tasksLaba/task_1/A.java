@@ -1,4 +1,4 @@
-package by.tasks.task_1;
+package by.tasksLaba.task_1;
 
 public class A {
     String str = "ab";

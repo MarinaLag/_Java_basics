@@ -1,8 +1,8 @@
-package by.tasks.task_1;
+package by.tasksLaba.task_1;
 
 public class Main {
     public static void main(String[] args) {
-        //new B();
+        new B();
 
         // вызываем конструктор B а он вызовет А
         //в конструкторе А вызоветля метод из В

@@ -1,4 +1,4 @@
-package by.tasks.task_2;
+package by.tasksLaba.task_2;
 
 public class Child extends Parent{
     static {

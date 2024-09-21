@@ -1,4 +1,4 @@
-package by.tasks.task_3;
+package by.tasksLaba.task_3;
 
 import java.util.ArrayList;
 import java.util.List;
