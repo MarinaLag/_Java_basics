@@ -25,7 +25,6 @@ public class Stream_2 {
 //- Метод `collect` - это терминальная операция, которая завершает работу со стримом и
 // предоставляет готовый результат (в данном случае `Map`).
 
-
         // сгруппировать данные в map, где ключ - длинна строки, значение КОЛИЧЕСТВО строк с такой длинной
         List<String> strings1 = List.of("string", "apple", "banane", "cat", "dog", "Java",
                 "hello", "world", "car", "home");
@@ -33,15 +32,6 @@ public class Stream_2 {
                 .collect(Collectors.groupingBy(String::length, Collectors.counting()));
         System.out.println(map1);
         // =>{3=3, 4=2, 5=3, 6=2}
-
-
-
-        // что выведет?
-        List<Integer> list = List.of(1, 2, 3, 4);
-        list.stream()
-                .filter(i -> i % 2 == 0)
-                .peek(System.out::println);
-        // ничего , т. к. нет тернального метода
 
     }
 }

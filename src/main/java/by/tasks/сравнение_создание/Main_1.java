@@ -1,4 +1,4 @@
-package by.tasks.сравнение;
+package by.tasks.сравнение_создание;
 
 public class Main_1 {
     public static void main(String[] args) {

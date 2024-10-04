@@ -1,4 +1,6 @@
-package by.tasks.task_1;
+package by.tasks.инициализация.task_1;
+
+import by.tasks.инициализация.task_1.B;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package by.tasks.массив;
+package by.tasks.алгоритмы;
 
 import java.util.HashSet;
 

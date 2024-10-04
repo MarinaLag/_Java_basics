@@ -1,9 +1,10 @@
-package by.tasks.сравнение;
+package by.tasks.сравнение_создание;
 
 public class Main {
     public static void main(String[] args) {
         Object obj1 = new Object();
         Object obj2 = new Object();
+        Object obj3 = obj1; // true, указывают на один и тот же объект
 
         System.out.println(obj1.equals(obj2));   // false OBJECT cравнивает по ссылкам !!!!!!!!!
         System.out.println(obj1==obj2);          // false

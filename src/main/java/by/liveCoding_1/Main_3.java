@@ -1,4 +1,4 @@
-package by.liveCoding;
+package by.liveCoding_1;
 
 public class Main_3 {
     public static void main(String[] args) {

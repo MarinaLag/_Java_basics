@@ -6,17 +6,15 @@ import java.util.stream.Collectors;
 
 public class Stream_1 {
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("Москва", "Архангельск", "Астрахань", "Минск", "Антверпень");
         //получить список городов начинающихся на А в Uppercase, отсортированными
+        List<String> list = Arrays.asList("Москва", "Архангельск", "Астрахань", "Минск", "Антверпень");
+
         List<String> listRes = list.stream()
-                .filter(s -> s.startsWith("А")) //фильтруем
+                .filter(s -> s.startsWith("А")) //фильтруем по А
                 .map(String::toUpperCase)       // переводим в вверхний регистр
-                .sorted()                         // сортируем
                 .collect(Collectors.toList());    //собирает элементы вашего стрима в список
 
-        System.out.println(listRes);
-
-        // =>[АНТВЕРПЕНЬ, АРХАНГЕЛЬСК, АСТРАХАНЬ]
+        System.out.println(listRes);   // =>[АНТВЕРПЕНЬ, АРХАНГЕЛЬСК, АСТРАХАНЬ]
 
         //collect - преобразования элементов потока в другую коллекцию,
         // Это терминальная операция
