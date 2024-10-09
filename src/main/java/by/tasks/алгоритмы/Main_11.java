@@ -25,7 +25,7 @@ public class Main_11 {
     //    System.out.println(right); // 3
         while (left < right) {
             if (numbers[left] + numbers[right] == target) {
-                return new int[]{left + 1, right + 1};
+                return new int[]{left, right};
             } else if (numbers[left] + numbers[right] > target) {
                 right--;
             } else {

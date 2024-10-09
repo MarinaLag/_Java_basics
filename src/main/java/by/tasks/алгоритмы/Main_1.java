@@ -21,5 +21,6 @@ public class Main_1 {
             }
         }
         return true;  // Все элементы уникальны
+
     }
 }

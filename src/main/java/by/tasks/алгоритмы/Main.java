@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class Main {
     public static void main(String[] args) {
         // определить содержит ли массив дубликаты
-        int[] nums = {1, 5, 5,7, 0, 9};
+        int[] nums = {1, 5,7,7, 0, 9};
 
         boolean res = containtDublicat(nums);
         if(res){

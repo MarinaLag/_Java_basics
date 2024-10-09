@@ -1,5 +1,7 @@
 package by.tasks.String;
 
+import java.util.Arrays;
+
 public class main_2_палиндром {
     public static void main(String[] args) {
         // является ли строка палиндромом
@@ -9,7 +11,7 @@ public class main_2_палиндром {
         //- Фразы: "Я несу гусеня", "А роза упала на лапу Азора"
         //- Числа: 121, 12321
 
-        String palindrome = "A man, a plan, a canal: Parama";
+        String palindrome = "A man, a plan, a canal: Panama";
         Boolean res = isPalindrome(palindrome);
         System.out.println(res);
 
@@ -21,7 +23,18 @@ public class main_2_палиндром {
         // Убираем все не буквенно-цифровые символы и приводим к нижнему регистру
         String cleaned = str.replaceAll("[^А-Яа-я]", "").toLowerCase();
 
+        // Создаем обратную версию строки вручную
+//        String reversed = "";
+//        for (int i = cleaned.length() - 1; i >= 0; i--) {
+//            reversed += cleaned.charAt(i);
+//        }
+        // Сравниваем оригинальную строку с её обратной версией
+     ///   return cleaned.equals(reversed);
+
         // Сравниваем строку с ее обратной версией
-        return cleaned.equals(new StringBuilder(cleaned).reverse().toString());
+//        StringBuilder cope = new StringBuilder(cleaned).reverse();
+//        return cleaned.equals(cope);
+
+      return cleaned.equals(new StringBuilder(cleaned).reverse().toString());
     }
 }

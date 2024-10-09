@@ -12,6 +12,7 @@ public class Stream_1 {
         List<String> listRes = list.stream()
                 .filter(s -> s.startsWith("А")) //фильтруем по А
                 .map(String::toUpperCase)       // переводим в вверхний регистр
+                .sorted()
                 .collect(Collectors.toList());    //собирает элементы вашего стрима в список
 
         System.out.println(listRes);   // =>[АНТВЕРПЕНЬ, АРХАНГЕЛЬСК, АСТРАХАНЬ]

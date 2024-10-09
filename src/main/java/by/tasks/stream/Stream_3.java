@@ -11,8 +11,8 @@ public class Stream_3 {
         List<String> words = Arrays.asList("осень", "лето","зима", "весна","лето");
         String str = words.stream()
                 .distinct()  //осень", "лето","зима", "весна"
-                .sorted((a,b) ->Integer.compare(a.length(),b.length())) //лето зима осень
-                .peek(System.out::println)// весна
+                .sorted((a,b) ->Integer.compare(a.length(),b.length())) //лето зима осень весна
+               // .peek(System.out::println)
                 .collect(Collectors.joining(", ")); //лето, зима, осень, весна
         System.out.println(str);
 

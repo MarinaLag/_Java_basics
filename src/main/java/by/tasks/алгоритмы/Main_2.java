@@ -1,5 +1,7 @@
 package by.tasks.алгоритмы;
 
+import java.util.Arrays;
+
 public class Main_2 {
     public static void main(String[] args) {
         // есть строка проверить ваидна она или нет
@@ -16,16 +18,19 @@ public class Main_2 {
 
     public static boolean checkString(String str) {
         if (str.startsWith(")")) return false;
+
         char[] str1 = str.toCharArray();
+        System.out.println("str1 " + Arrays.toString(str1));
+
         int open = 0;
         int close = 0;
 
         for (char ch : str1) {
             if (ch == '(') {
-                open += 1;
+                open ++;
             }
             if (ch == ')') {
-                close += 1;
+                close ++;
             }
         }
         if (open==close){

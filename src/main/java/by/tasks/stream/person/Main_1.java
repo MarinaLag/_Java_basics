@@ -13,16 +13,19 @@ public class Main_1 {
         persons.add(new Person("Alex","2"));
 
         var streamPerson =persons.stream();
-      //  var streamPerson1 =persons.stream();
+        var streamPerson1 =persons.stream();
 
-        // НЕ ОТРАБОТАЕТ
+
         System.out.println(streamPerson
                 .map(Person::getName)
-                .collect(Collectors.joining(", ")));  //Alex, Sergei, Alex ИЛИ Sergei, Alex, Alex
+                .collect(Collectors.toList()));
+        // .collect(Collectors.joining(", ")));  //Alex, Sergei, Alex ИЛИ Sergei, Alex, Alex
 
+        // НЕ ОТРАБОТАЕТ  исправить на streamPerson1
        System.out.println(streamPerson
                 .map(Person::getAge)
                 .collect(Collectors.toList()));   // использовать поток (stream) после его завершения
+        // [3, 2, 2]
 
         // ОТРАБОТАЕТ
         persons.stream()
