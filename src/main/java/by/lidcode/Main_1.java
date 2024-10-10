@@ -9,7 +9,7 @@ public class Main_1 {
         System.out.println(twoSum(nums, target));
         System.out.println(Arrays.toString(twoSum(nums,target))); // [0, 1]
 
-        int[] nums1 ={3,2,4};
+        int[] nums1 ={3,2};
         int target1 = 6;
         System.out.println(Arrays.toString(twoSum(nums1,target1))); // [1,2]
 
@@ -22,6 +22,6 @@ public class Main_1 {
                 }
             }
         }
-        return new int[]{0};
+        return new int[0];
     }
 }

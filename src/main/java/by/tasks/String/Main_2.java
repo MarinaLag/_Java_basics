@@ -1,4 +1,4 @@
-package by.tasks.string_1;
+package by.tasks.String;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Main_1 {
+public class Main_2 {
     public static void main(String[] args) {
        //Задан набор пар городов: между каждой парой городов сотрудник компании совершил
         //прямой перелёт, но информация, в каком направлении был совершен перелёт, утеряна.

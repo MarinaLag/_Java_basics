@@ -10,10 +10,7 @@ public class Main_7 {
         int b = 10;
         int c = 7;
         printMaxNumber(a, b, c);
-
-
     }
-
     public static void printMaxNumber(int a, int b, int c) {
         System.out.println(a == b && b == c ? "are equals" : (a > b && a > c ? a : (b>c && b>a ? b : c)));
         // или

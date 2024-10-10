@@ -1,4 +1,4 @@
-package by.tasks.String;
+package by.lidcode.палиндром;
 
 import java.util.Arrays;
 

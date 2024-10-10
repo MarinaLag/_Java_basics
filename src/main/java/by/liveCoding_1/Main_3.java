@@ -15,7 +15,7 @@ public class Main_3 {
             } else if (max2 < i && i < max) {
                 max2 = i;
             }
-
+//если 100 и 100 он ничего не делает
         }
         System.out.println(max2);
 

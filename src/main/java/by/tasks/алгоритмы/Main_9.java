@@ -7,7 +7,6 @@ public class Main_9 {
         missingNumbers(sortedArr);
 
     }
-
     public static void missingNumbers(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) { // Проходим до предпоследнего элемента
             int current = arr[i]; // Текущий элемент

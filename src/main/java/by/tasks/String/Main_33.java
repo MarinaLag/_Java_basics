@@ -1,8 +1,8 @@
-package by.tasks.алгоритмы;
+package by.tasks.String;
 
 import java.util.Arrays;
 
-public class Main_2 {
+public class Main_33 {
     public static void main(String[] args) {
         // есть строка проверить ваидна она или нет
         // "(((())))" - валидна
