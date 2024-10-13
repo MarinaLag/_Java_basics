@@ -1,6 +1,7 @@
-package by.lidcode.префекс;
+package by.lidcode.префекс.строки;
 
-public class Main_1 {
+public class
+Main_1 {
     public static void main(String[] args) {
 //Напишите функцию для поиска самой длинной общей строки префикса среди массива строк.
 //Если общего префикса нет, вернуть пустую строку "".
