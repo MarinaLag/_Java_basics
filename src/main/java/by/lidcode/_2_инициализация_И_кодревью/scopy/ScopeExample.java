@@ -1,7 +1,7 @@
 package by.lidcode._2_инициализация_И_кодревью.scopy;
 
 public class ScopeExample {
-    int  instanceVar = 20; // переменная обычная экземпляра
+    int instanceVar = 20; // переменная обычная экземпляра
 
     public  void display() {
         System.out.println("instanceVar: " + instanceVar);
