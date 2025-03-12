@@ -1,15 +1,17 @@
 package by.lidcode._6_arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.stream.IntStream;
 
-public class Maint_arrays {
+public class Main_arrays {
     public static void main(String[] args) {
         //Поиск максимального элемента в массиве
         int[] nums = {1, 7, 3, 9, 5};
         System.out.println("Maximum element: " + findMax(nums)); // Output: 9
         System.out.println("Maximum element: " + findMax1(nums)); // Output: 9
+        System.out.println("Maximum element: " + findMax2(nums)); // Output: 9
 
         //Найти сумму всех элементов массива
         int[] nums1 = {1, 2, 3, 4, 5};
@@ -31,23 +33,30 @@ public class Maint_arrays {
 
         System.out.println();
         //Проверка на наличие дубликатов 2 способа
-        int[] nums3 = {1, 2, 3,2};
+        int[] nums3 = {1, 2, 3, 2};
         System.out.println("Contains duplicate: " + hasDuplicates(nums3)); // Output: true
         System.out.println("Contains duplicate: " + hasDuplicates1(nums3)); // Output: true
 
         System.out.println();
         // Удаление элемента из массива
-        int[] nums4 = {1,2,3,4,5,6};
-       nums4 =  deleteByIndex(nums4,3);
-        for (int i : nums4){
+        int[] nums4 = {1, 2, 3, 4, 5, 6};
+        nums4 = deleteByIndex(nums4, 3);
+        for (int i : nums4) {
             System.out.println(i); // 123 56
         }
+
         System.out.println();
-        int[] nums5 = {1,2,3,4,5,6};
-       ArrayList<Integer> res = deleteByIndexArrayList(nums5,1);
+        int[] nums5 = {1, 2, 3, 4, 5, 6};
+        ArrayList<Integer> res = deleteByIndexArrayList(nums5, 1);
         System.out.println(res);//23456
 
+        System.out.println("==========1256=========");
+        nums4 = deleteByIndex1(nums4,2);
+        System.out.println(Arrays.toString(nums4));
 
+        System.out.println("==========126=========");
+        nums4 = deleteByIndex2(nums4,2);
+        System.out.println(Arrays.toString(nums4));
     }
 
     public static int findMax(int[] nums) {
@@ -67,6 +76,12 @@ public class Maint_arrays {
                 max = i;
             }
         }
+        return max;
+    }
+
+    public static int findMax2(int[] nums) {
+        Arrays.sort(nums);
+        int max = nums[nums.length - 1];
         return max;
     }
 
@@ -105,16 +120,17 @@ public class Maint_arrays {
     public static boolean hasDuplicates(int[] arr) {
         int x = arr[0];
         for (int i = 0; i < arr.length; i++) {
-           for (int j=1; j<arr.length; j++){
-               if (x == arr[i]){
-                   break;
-               }
-               return true;
-           }
-           x++;
+            for (int j = 1; j < arr.length; j++) {
+                if (x == arr[i]) {
+                    break;
+                }
+                return true;
+            }
+            x++;
         }
         return false;
     }
+
     public static boolean hasDuplicates1(int[] nums) {// будем добавлять в коллекцию по 1 элементу
         HashSet<Integer> seen = new HashSet<>();
         for (int num : nums) {
@@ -126,7 +142,7 @@ public class Maint_arrays {
         return false;
     }
 
-    public static int[] deleteByIndex(int[] nums, int index){
+    public static int[] deleteByIndex(int[] nums, int index) {
         if (index < 0 || index >= nums.length) {
             throw new IllegalArgumentException("Index out of bounds");
         }
@@ -140,17 +156,19 @@ public class Maint_arrays {
         }
         return newArray; // Возвращаем новый массив
     }
+
     public static ArrayList<Integer> deleteByIndexArrayList(int[] arr, int index) {
         if (index < 0 || index >= arr.length) {
             System.out.println("Index out of bounds");
         }
-       ArrayList<Integer> res = new ArrayList<>();
-        for (int i : arr){
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int i : arr) {
             res.add(i);
         }
-        res.remove(index-1);
+        res.remove(index - 1);
         return res;
     }
+
     public static int[] deleteByIndex1(int[] nums, int index) {
         if (index < 0 || index >= nums.length) {
             throw new IllegalArgumentException("Index out of bounds");
@@ -166,14 +184,14 @@ public class Maint_arrays {
         }
         return newArray; // Возвращаем новый массив
     }
+
     public static int[] deleteByIndex2(int[] nums, int index) {
         // Проверка на валидный индекс !!!!
         return IntStream.range(0, nums.length)
                 .filter(i -> i != index) // Пропускаем индекс, который нужно удалить
                 .map(i -> nums[i])
-                        .toArray(); // Создаем новый массив
+                .toArray(); // Создаем новый массив
     }
-
 
 
 }

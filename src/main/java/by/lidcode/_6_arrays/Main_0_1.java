@@ -30,7 +30,6 @@ public class Main_0_1 {
 
 
         System.out.println("--------третий способ-----------------");
-        // Loop through all rows
         for (int[] row : arr)
             System.out.println(Arrays.toString(row));
     }

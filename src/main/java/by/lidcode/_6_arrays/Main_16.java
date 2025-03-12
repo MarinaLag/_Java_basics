@@ -2,7 +2,7 @@ package by.lidcode._6_arrays;
 
 import java.util.Arrays;
 
-public class Main_44 {
+public class Main_16 {
     public static void main(String[] args) {
         //Дан массив nums, переместите все нули в конец массива, сохраняя относительный порядок ненулевых элементов.
         int[] nums = {0,1,0,3,12}; // -> [1,3,12,0,0]

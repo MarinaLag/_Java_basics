@@ -2,7 +2,7 @@ package by.lidcode._6_arrays;
 
 import java.util.Arrays;
 
-public class Main_55 {
+public class Main_17 {
     public static void main(String[] args) {
         //Дан отсортированный массив целых чисел numbers и целое число target.
 //Найдите индексы двух чисел, сумма которых равна target.

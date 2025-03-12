@@ -3,7 +3,7 @@ package by.lidcode._6_arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main_88 {
+public class Main_18 {
     public static void main(String[] args) {
         // Есть массив с двумя нулями. Вывести в log через пробел обратном порядке как они идут все числа,
 // которые находятся между нулями (нули выводить не нужно).

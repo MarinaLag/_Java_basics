@@ -1,6 +1,6 @@
 package by.lidcode._6_arrays;
 
-public class Main_33 {
+public class Main_15 {
     public static void main(String[] args) {
         // Поиск максимального элемента в массиве
         int[] number = {3,5,7,2,8,2,10};
