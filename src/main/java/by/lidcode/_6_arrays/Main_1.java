@@ -13,12 +13,13 @@ public class Main_1 {
         int[] arr1 = {1, 2, 4};
         int[] arr2 = {1, 3, 4};
 
-        Integer[] mergedArray = addArray(arr1, arr2);
+        int[] mergedArray = addArray(arr1, arr2);
 
-        System.out.println(Arrays.toString(mergedArray));
-        System.out.println(Arrays.toString(addArray(arr1,arr2)));
+        System.out.println("mergedArray " + Arrays.toString(mergedArray));
+        System.out.println("addArray " + Arrays.toString(addArray(arr1,arr2)));
     }
-    public static Integer[] addArray(int[] arr1, int[] arr2) {
+
+    public static int[] addArray(int[] arr1, int[] arr2) {
         int[] newArray = new int[arr1.length + arr2.length];
         for (int i = 0; i < arr1.length; i++) {
             newArray[i] = arr1[i];
@@ -28,12 +29,11 @@ public class Main_1 {
             newArray[arr1.length + j] = arr2[j];
         }
         Arrays.sort(newArray);
-        System.out.println(Arrays.toString(newArray));
 
-        Set<Integer> set =new HashSet<>();
+     /*   Set<Integer> set =new HashSet<>();
         for (int i : newArray){
             set.add(i);
-        }
+        }*/
         // Преобразуем Integer[] в int[]
 //        int[] intArray = new int[arrayFromSet.length];
 //        for (int i = 0; i < arrayFromSet.length; i++) {
@@ -56,6 +56,6 @@ public class Main_1 {
 //            }
   //          System.out.println(Arrays.toString(newArray));
   //      }
-        return set.toArray(new Integer[0]);
+        return newArray;
     }
 }

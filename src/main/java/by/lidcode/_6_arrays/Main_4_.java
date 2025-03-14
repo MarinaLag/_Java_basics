@@ -1,6 +1,6 @@
 package by.lidcode._6_arrays;
 
-public class Main_4 {
+public class Main_4_ {
     public static void main(String[] args) {
         // найти максим среднюю сумму arr состоящую из подмассива из 4 элементов
         // ответ 12+(-5) + (-6) +50 =12,75
@@ -21,8 +21,13 @@ public class Main_4 {
             sum += arr[i];
         }
 
+        System.out.println(sum);
+
         for (int i=4; i<arr.length; i++){
+            System.out.println(arr[i]);  // 50
+            System.out.println(arr[i-k]);  // 1
             sum += arr[i] - arr[i - k];
+            System.out.println("sum " + sum);   //51
             if(max<sum){
                 max=sum;
             }

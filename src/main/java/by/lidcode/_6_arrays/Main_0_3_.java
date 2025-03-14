@@ -2,7 +2,7 @@ package by.lidcode._6_arrays;
 
 import java.lang.reflect.Array;
 
-public class Main_0_3 {
+public class Main_0_3_ {
     public static void main(String[] args) {
         // количество элементов в матрице
 
@@ -53,6 +53,8 @@ public class Main_0_3 {
         int size = 0;
         for (int i = 0; i < Array.getLength(object); i++) {
             size += size(Array.get(object, i));
+            //Array.get(object,i) = дает значение
+            // size количество
         }
         return size;
     }

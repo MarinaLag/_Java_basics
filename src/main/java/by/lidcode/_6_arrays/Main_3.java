@@ -1,12 +1,13 @@
+package by.lidcode._6_arrays;
 
 public class Main_3 {
     public static void main(String[] args) {
         // найти количество элементов, которые больше соседей
-        int[] arr = {1, 5, 2};
+        int[] arr = {2, 5, 2};
         int[] arr1 = {1, 5, 2, 4, 2};
 
-        System.out.println(count(arr));  //1 - это 5
-        System.out.println(count(arr1)); //2 - это 5 и 4
+        System.out.println(count(arr));  // количество = 1 - это 5
+        System.out.println(count(arr1)); // количество = 2 - это 5 и 4
     }
 
     public static int count(int[] arr) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main_0 {
+public class Main_20 {
     public static void main(String[] args) {
         // метод, который заменяет дубликаты на _ из массива чисел
         int[] nums = {1, 1, 2};
